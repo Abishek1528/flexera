@@ -1,0 +1,486 @@
+/* ═══════════════════════════════════════════════════════════════
+   ShikshaPulse · SchoolDetails.css
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Container ── */
+.scd-container {
+  font-family: var(--sp-font, 'DM Sans', sans-serif);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ════════════════════════════════
+   HEADER
+   ════════════════════════════════ */
+.scd-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 4px 0 20px;
+  flex-wrap: wrap;
+}
+
+.scd-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sp-text-tertiary, #a09d98);
+  margin-bottom: 6px;
+}
+
+.scd-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--sp-text-primary, #1a1916);
+  line-height: 1.1;
+}
+
+.scd-meta {
+  font-size: 0.82rem;
+  color: var(--sp-text-tertiary, #a09d98);
+  margin-top: 5px;
+}
+
+.scd-header-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 6px;
+}
+
+/* Tier chips */
+.scd-chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 99px;
+}
+.scd-chip--critical  { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+.scd-chip--poor      { background: #fffbeb; color: #d97706; border: 1px solid #fde68a; }
+.scd-chip--good      { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+.scd-chip--excellent { background: #eff4ff; color: #2563eb; border: 1px solid #bfdbfe; }
+
+.scd-divider {
+  height: 1px;
+  background: var(--sp-border, #e8e6e0);
+}
+
+/* ════════════════════════════════
+   TOP GRID
+   ════════════════════════════════ */
+.scd-top-grid {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 16px;
+}
+
+/* ════════════════════════════════
+   CARDS
+   ════════════════════════════════ */
+.scd-card {
+  background: var(--sp-surface, #fff);
+  border: 1px solid var(--sp-border-light, #f0ede8);
+  border-radius: var(--sp-radius-lg, 14px);
+  padding: 22px 24px;
+  box-shadow: var(--sp-shadow-sm, 0 1px 3px rgba(0,0,0,.06));
+}
+
+.scd-card-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sp-text-tertiary, #a09d98);
+  margin-bottom: 18px;
+}
+
+.scd-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.scd-card-header .scd-card-label { margin-bottom: 0; }
+
+.scd-card-hint {
+  font-size: 0.76rem;
+  color: var(--sp-text-tertiary, #a09d98);
+}
+
+/* ── Scores card ── */
+.scd-card--scores {
+  min-width: 220px;
+}
+
+.scd-rings {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.scd-rings-divider {
+  width: 1px;
+  height: 80px;
+  background: var(--sp-border-light, #f0ede8);
+  flex-shrink: 0;
+}
+
+/* ── Score ring ── */
+.scd-ring-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.scd-ring-svg {
+  width: 80px;
+  height: 80px;
+  transform: rotate(-90deg);
+}
+
+.scd-ring-track {
+  fill: none;
+  stroke: var(--sp-surface-2, #f3f2ef);
+  stroke-width: 6;
+}
+
+.scd-ring-fill {
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.8s cubic-bezier(.4,0,.2,1);
+}
+
+.scd-ring-inner {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+  /* center over SVG */
+  margin-top: -56px;
+  pointer-events: none;
+}
+
+.scd-ring-value {
+  font-family: var(--sp-font-num, 'Fraunces', Georgia, serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--sp-text-primary, #1a1916);
+}
+
+.scd-ring-pct {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--sp-text-tertiary, #a09d98);
+}
+
+.scd-ring-label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sp-text-secondary, #6b6760);
+}
+
+.scd-ring-badge {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+.scd-ring-badge--critical  { background: #fef2f2; color: #dc2626; }
+.scd-ring-badge--poor      { background: #fffbeb; color: #d97706; }
+.scd-ring-badge--good      { background: #f0fdf4; color: #16a34a; }
+.scd-ring-badge--excellent { background: #eff4ff; color: #2563eb; }
+
+/* ── Weak areas ── */
+.scd-issue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scd-issue-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.84rem;
+  color: var(--sp-text-primary, #1a1916);
+  font-weight: 500;
+}
+
+.scd-issue-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ef4444;
+  flex-shrink: 0;
+}
+
+/* ── Recommendations ── */
+.scd-rec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scd-rec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.84rem;
+  color: var(--sp-text-primary, #1a1916);
+  line-height: 1.5;
+}
+
+.scd-rec-num {
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--sp-accent-light, #eff4ff);
+  color: var(--sp-accent, #2563eb);
+  font-size: 0.68rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ── All clear ── */
+.scd-all-clear {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  color: var(--sp-text-secondary, #6b6760);
+  padding: 8px 0;
+}
+
+/* ── Chart card ── */
+.scd-card--chart {
+  /* full width */
+}
+
+.scd-chart-wrap {
+  height: 260px;
+}
+
+/* ── Custom tooltip ── */
+.scd-tooltip {
+  background: var(--sp-text-primary, #1a1916);
+  border-radius: 8px;
+  padding: 10px 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+}
+
+.scd-tooltip-year {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 8px;
+}
+
+.scd-tooltip-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,.85);
+  margin-bottom: 4px;
+}
+.scd-tooltip-row:last-child { margin-bottom: 0; }
+
+.scd-tooltip-row strong {
+  margin-left: auto;
+  color: #fff;
+}
+
+.scd-tooltip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ════════════════════════════════
+   INTERVENTION TRACKER
+   ════════════════════════════════ */
+.scd-card--interventions {
+  /* full width */
+}
+
+.scd-intervention-input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.scd-intervention-input {
+  flex: 1;
+  padding: 9px 14px;
+  border: 1.5px solid var(--sp-border, #e8e6e0);
+  border-radius: var(--sp-radius, 10px);
+  font-family: var(--sp-font, 'DM Sans', sans-serif);
+  font-size: 0.84rem;
+  color: var(--sp-text-primary, #1a1916);
+  background: var(--sp-bg, #f8f7f4);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
+
+.scd-intervention-input::placeholder {
+  color: var(--sp-text-tertiary, #a09d98);
+}
+
+.scd-intervention-input:focus {
+  border-color: var(--sp-accent, #2563eb);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.1);
+}
+
+/* Buttons */
+.scd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: var(--sp-radius, 10px);
+  font-family: var(--sp-font, 'DM Sans', sans-serif);
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  border: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.scd-btn--primary {
+  background: var(--sp-text-primary, #1a1916);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.scd-btn--primary:hover:not(:disabled) {
+  background: #2d2c29;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  transform: translateY(-1px);
+}
+.scd-btn--primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Intervention list */
+.scd-intervention-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scd-intervention-item {
+  display: flex;
+  gap: 0;
+  background: var(--sp-bg, #f8f7f4);
+  border: 1px solid var(--sp-border-light, #f0ede8);
+  border-radius: var(--sp-radius, 10px);
+  overflow: hidden;
+  transition: box-shadow 0.15s ease;
+}
+.scd-intervention-item:hover {
+  box-shadow: var(--sp-shadow, 0 4px 12px rgba(0,0,0,.07));
+}
+
+.scd-intervention-accent {
+  width: 4px;
+  background: var(--sp-accent, #2563eb);
+  flex-shrink: 0;
+}
+
+.scd-intervention-body {
+  padding: 12px 16px;
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.scd-intervention-text {
+  font-size: 0.84rem;
+  color: var(--sp-text-primary, #1a1916);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.scd-intervention-date {
+  font-size: 0.72rem;
+  color: var(--sp-text-tertiary, #a09d98);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Empty state */
+.scd-intervention-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--sp-text-tertiary, #a09d98);
+  border: 1px dashed var(--sp-border, #e8e6e0);
+  border-radius: var(--sp-radius, 10px);
+}
+
+.scd-intervention-empty p {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--sp-text-secondary, #6b6760);
+  margin: 0;
+}
+
+.scd-intervention-empty span {
+  font-size: 0.78rem;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .scd-top-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .scd-card--scores {
+    grid-column: span 2;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .scd-top-grid         { grid-template-columns: 1fr; }
+  .scd-card--scores     { grid-column: auto; }
+  .scd-header           { flex-direction: column; }
+  .scd-rings            { justify-content: center; }
+  .scd-intervention-input-row { flex-direction: column; }
+  .scd-btn              { width: 100%; justify-content: center; }
+}

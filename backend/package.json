@@ -1,0 +1,20 @@
+{
+  "name": "shikshapulse-backend",
+  "version": "1.0.0",
+  "description": "Backend server for ShikshaPulse education analytics",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["education", "aser", "analytics"],
+  "author": "ShikshaPulse Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
