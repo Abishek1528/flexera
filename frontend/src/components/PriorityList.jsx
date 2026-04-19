@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/PriorityList.css';
+import '../Styles/Prioritylist.css';
 
 /* ── Risk tier helpers ── */
 const getRiskTier = (score) => {
