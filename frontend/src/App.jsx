@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import Dashboard from './pages/Dashboard.jsx';
 import SchoolDetailPage from './pages/SchoolDetail.jsx';
 import HeatMap from './pages/HeatMap.jsx';
-import './styles/App.css';
+import './Styles/App.css';
 
 const Navbar = () => {
   const location = useLocation();
