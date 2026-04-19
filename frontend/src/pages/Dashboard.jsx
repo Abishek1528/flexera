@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Filters from '../components/Filters.jsx';
 import PriorityList from '../components/PriorityList.jsx';
 import api from '../services/api.js';
-import '../styles/Dashboard.css';
+import '../Styles/Dashboard.css';
 
 /* ─── Skeleton shimmer blocks ─── */
 const Skeleton = ({ width = '100%', height = '1rem', radius = '6px', style = {} }) => (
