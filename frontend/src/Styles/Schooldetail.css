@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════════════════════════
+   ShikshaPulse · SchoolDetail.css
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Page shell ── */
+.sd-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 40px 80px;
+  font-family: var(--sp-font, 'DM Sans', sans-serif);
+}
+
+/* ── Top bar: back + breadcrumb ── */
+.sd-topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.sd-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: var(--sp-surface, #fff);
+  border: 1.5px solid var(--sp-border, #e8e6e0);
+  border-radius: 8px;
+  font-family: var(--sp-font, 'DM Sans', sans-serif);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--sp-text-secondary, #6b6760);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+
+.sd-back-btn:hover {
+  color: var(--sp-text-primary, #1a1916);
+  border-color: #c9c5be;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  transform: translateX(-1px);
+}
+
+.sd-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+}
+
+.sd-breadcrumb-item {
+  color: var(--sp-text-tertiary, #a09d98);
+  cursor: pointer;
+  transition: color 0.14s;
+}
+.sd-breadcrumb-item:hover { color: var(--sp-text-secondary, #6b6760); }
+
+.sd-breadcrumb-item--active {
+  color: var(--sp-text-primary, #1a1916);
+  font-weight: 600;
+  cursor: default;
+}
+
+.sd-breadcrumb-sep {
+  color: var(--sp-border, #e8e6e0);
+  user-select: none;
+}
+
+/* ── Content wrapper ── */
+.sd-content {
+  /* SchoolDetails component renders inside here — no extra padding needed */
+}
+
+/* ── Not found state ── */
+.sd-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  gap: 12px;
+  color: var(--sp-text-tertiary, #a09d98);
+}
+
+.sd-not-found h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--sp-text-secondary, #6b6760);
+  margin-top: 4px;
+}
+
+.sd-not-found p {
+  font-size: 0.84rem;
+  max-width: 320px;
+  line-height: 1.65;
+}
+
+/* ── Buttons ── */
+.sd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-family: var(--sp-font, 'DM Sans', sans-serif);
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  border: none;
+  margin-top: 8px;
+}
+
+.sd-btn--primary {
+  background: var(--sp-text-primary, #1a1916);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.sd-btn--primary:hover {
+  background: #2d2c29;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  transform: translateY(-1px);
+}
+
+/* ── Skeleton layout ── */
+.sd-skeleton-wrap {
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sd-skeleton-cards {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .sd-page { padding: 20px 16px 60px; }
+  .sd-skeleton-cards { flex-direction: column; }
+  .sd-topbar { flex-wrap: wrap; }
+}

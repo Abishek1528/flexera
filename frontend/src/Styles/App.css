@@ -1,0 +1,178 @@
+/* ═══════════════════════════════════════════════════════════════
+   ShikshaPulse · App.css  (global shell + navbar)
+   Fonts loaded here once for the whole app.
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:wght@700;900&display=swap');
+
+/* ── Global reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #f8f7f4;
+  color: #1a1916;
+}
+
+/* ── App shell ── */
+.sp-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-main {
+  flex: 1;
+  /* Offset the fixed navbar */
+  padding-top: 60px;
+}
+
+/* ════════════════════════════════
+   NAVBAR
+   ════════════════════════════════ */
+.sp-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid #e8e6e0;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+/* Elevated state on scroll */
+.sp-nav--scrolled {
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.sp-nav-inner {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* ── Logo ── */
+.sp-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.sp-nav-logo-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #1a1916;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.sp-nav-logo:hover .sp-nav-logo-mark {
+  transform: rotate(-4deg) scale(1.05);
+}
+
+.sp-nav-logo-text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #6b6760;
+  letter-spacing: -0.01em;
+}
+
+.sp-nav-logo-text strong {
+  font-weight: 700;
+  color: #1a1916;
+}
+
+/* ── Nav links ── */
+.sp-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.sp-nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #6b6760;
+  text-decoration: none;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.sp-nav-link:hover {
+  color: #1a1916;
+  background: #f3f2ef;
+}
+
+.sp-nav-link--active {
+  color: #1a1916;
+  font-weight: 600;
+  background: #f3f2ef;
+}
+
+/* Animated underline dot on active */
+.sp-nav-link-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #2563eb;
+  flex-shrink: 0;
+  animation: sp-dot-in 0.2s ease;
+}
+
+@keyframes sp-dot-in {
+  from { transform: scale(0); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ── Right slot ── */
+.sp-nav-right {
+  margin-left: auto;
+}
+
+.sp-nav-pill {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 99px;
+  background: #eff4ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .sp-nav-inner  { padding: 0 16px; gap: 16px; }
+  .sp-nav-logo-text { display: none; }
+  .sp-nav-link   { padding: 6px 10px; font-size: 0.8rem; }
+  .sp-nav-right  { display: none; }
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "Year": 2016,
+    "State": "Andhra Pradesh",
+    "Grade": 3,
+    "Reading_Level_Percentage": 22.7,
+    "Math_Level_Percentage": 48.1
+  },
+  {
+    "Year": 2016,
+    "State": "Andhra Pradesh",
+    "Grade": 5,
+    "Reading_Level_Percentage": 55.1,
+    "Math_Level_Percentage": 25
+  },
+  {
+    "Year": 2016,
+    "State": "Andhra Pradesh",
+    "Grade": 8,
+    "Reading_Level_Percentage": 37.2,
+    "Math_Level_Percentage": 50.4
+  },
+  {
+    "Year": 2018,
+    "State": "Andhra Pradesh",
+    "Grade": 3,
+    "Reading_Level_Percentage": 22.4,
+    "Math_Level_Percentage": 38.4
+  },
+  {
+    "Year": 2018,
+    "State": "Andhra Pradesh",
+    "Grade": 5,
+    "Reading_Level_Percentage": 59.7,
+    "Math_Level_Percentage": 39.3
+  },
+  {
+    "Year": 2018,
+    "State": "Andhra Pradesh",
+    "Grade": 8,
+    "Reading_Level_Percentage": 78.2,
+    "Math_Level_Percentage": 47.6
+  },
+  {
+    "Year": 2022,
+    "State": "Andhra Pradesh",
+    "Grade": 3,
+    "Reading_Level_Percentage": 10.4,
+    "Math_Level_Percentage": 33.7
+  },
+  {
+    "Year": 2022,
+    "State": "Andhra Pradesh",
+    "Grade": 5,
+    "Reading_Level_Percentage": 36.4,
+    "Math_Level_Percentage": 29.6
+  },
+  {
+    "Year": 2022,
+    "State": "Andhra Pradesh",
+    "Grade": 8,
+    "Reading_Level_Percentage": 66.4,
+    "Math_Level_Percentage": 51.7
+  },
+  {
+    "Year": 2016,
+    "State": "Assam",
+    "Grade": 3,
+    "Reading_Level_Percentage": 17.2,
+    "Math_Level_Percentage": 26.5
+  },
+  {
+    "Year": 2016,
+    "State": "Assam",
+    "Grade": 5,
+    "Reading_Level_Percentage": 36,
+    "Math_Level_Percentage": 42
+  },
+  {
+    "Year": 2016,
+    "State": "Assam",
+    "Grade": 8,
+    "Reading_Level_Percentage": 16,
+    "Math_Level_Percentage": 28.5
+  },
+  {
+    "Year": 2018,
+    "State": "Assam",
+    "Grade": 3,
+    "Reading_Level_Percentage": 19.9,
+    "Math_Level_Percentage": 29.7
+  },
+  {
+    "Year": 2018,
+    "State": "Assam",
+    "Grade": 5,
+    "Reading_Level_Percentage": 40.1,
+    "Math_Level_Percentage": 17.8
+  },
+  {
+    "Year": 2018,
+    "State": "Assam",
+    "Grade": 8,
+    "Reading_Level_Percentage": 60.8,
+    "Math_Level_Percentage": 31.2
+  },
+  {
+    "Year": 2022,
+    "State": "Assam",
+    "Grade": 3,
+    "Reading_Level_Percentage": 17.9,
+    "Math_Level_Percentage": 24.4
+  },
+  {
+    "Year": 2022,
+    "State": "Assam",
+    "Grade": 5,
+    "Reading_Level_Percentage": 36.5,
+    "Math_Level_Percentage": 15.2
+  },
+  {
+    "Year": 2022,
+    "State": "Assam",
+    "Grade": 8,
+    "Reading_Level_Percentage": 68.8,
+    "Math_Level_Percentage": 27.8
+  },
+  {
+    "Year": 2016,
+    "State": "Bihar",
+    "Grade": 3,
+    "Reading_Level_Percentage": 20.7,
+    "Math_Level_Percentage": 27.1
+  },
+  {
+    "Year": 2016,
+    "State": "Bihar",
+    "Grade": 5,
+    "Reading_Level_Percentage": 55.9,
+    "Math_Level_Percentage": 23
+  },
+  {
+    "Year": 2016,
+    "State": "Bihar",
+    "Grade": 8,
+    "Reading_Level_Percentage": 32.6,
+    "Math_Level_Percentage": 62.3
+  },
+  {
+    "Year": 2018,
+    "State": "Bihar",
+    "Grade": 3,
+    "Reading_Level_Percentage": 23.5,
+    "Math_Level_Percentage": 28.4
+  },
+  {
+    "Year": 2018,
+    "State": "Bihar",
+    "Grade": 5,
+    "Reading_Level_Percentage": 41.3,
+    "Math_Level_Percentage": 23.9
+  },
+  {
+    "Year": 2018,
+    "State": "Bihar",
+    "Grade": 8,
+    "Reading_Level_Percentage": 71.2,
+    "Math_Level_Percentage": 56.9
+  },
+  {
+    "Year": 2022,
+    "State": "Bihar",
+    "Grade": 3,
+    "Reading_Level_Percentage": 19.8,
+    "Math_Level_Percentage": 28.7
+  },
+  {
+    "Year": 2022,
+    "State": "Bihar",
+    "Grade": 5,
+    "Reading_Level_Percentage": 42.4,
+    "Math_Level_Percentage": 35.4
+  },
+  {
+    "Year": 2022,
+    "State": "Bihar",
+    "Grade": 8,
+    "Reading_Level_Percentage": 71.2,
+    "Math_Level_Percentage": 59.4
+  },
+  {
+    "Year": 2016,
+    "State": "Uttar Pradesh",
+    "Grade": 3,
+    "Reading_Level_Percentage": 26.1,
+    "Math_Level_Percentage": 26.6
+  },
+  {
+    "Year": 2016,
+    "State": "Uttar Pradesh",
+    "Grade": 5,
+    "Reading_Level_Percentage": 52,
+    "Math_Level_Percentage": 19.2
+  },
+  {
+    "Year": 2016,
+    "State": "Uttar Pradesh",
+    "Grade": 8,
+    "Reading_Level_Percentage": 73.7,
+    "Math_Level_Percentage": 44.4
+  },
+  {
+    "Year": 2018,
+    "State": "Uttar Pradesh",
+    "Grade": 3,
+    "Reading_Level_Percentage": 25.6,
+    "Math_Level_Percentage": 24.8
+  },
+  {
+    "Year": 2018,
+    "State": "Uttar Pradesh",
+    "Grade": 5,
+    "Reading_Level_Percentage": 64.3,
+    "Math_Level_Percentage": 23.6
+  },
+  {
+    "Year": 2018,
+    "State": "Uttar Pradesh",
+    "Grade": 8,
+    "Reading_Level_Percentage": 76.2,
+    "Math_Level_Percentage": 46.7
+  },
+  {
+    "Year": 2022,
+    "State": "Uttar Pradesh",
+    "Grade": 3,
+    "Reading_Level_Percentage": 23.9,
+    "Math_Level_Percentage": 28.7
+  },
+  {
+    "Year": 2022,
+    "State": "Uttar Pradesh",
+    "Grade": 5,
+    "Reading_Level_Percentage": 46.3,
+    "Math_Level_Percentage": 30.6
+  },
+  {
+    "Year": 2022,
+    "State": "Uttar Pradesh",
+    "Grade": 8,
+    "Reading_Level_Percentage": 70.6,
+    "Math_Level_Percentage": 49.4
+  },
+  {
+    "Year": 2016,
+    "State": "Kerala",
+    "Grade": 3,
+    "Reading_Level_Percentage": 45.5,
+    "Math_Level_Percentage": 45.6
+  },
+  {
+    "Year": 2016,
+    "State": "Kerala",
+    "Grade": 5,
+    "Reading_Level_Percentage": 69.2,
+    "Math_Level_Percentage": 38.6
+  },
+  {
+    "Year": 2016,
+    "State": "Kerala",
+    "Grade": 8,
+    "Reading_Level_Percentage": 85.3,
+    "Math_Level_Percentage": 53
+  },
+  {
+    "Year": 2018,
+    "State": "Kerala",
+    "Grade": 3,
+    "Reading_Level_Percentage": 52.3,
+    "Math_Level_Percentage": 47.7
+  },
+  {
+    "Year": 2018,
+    "State": "Kerala",
+    "Grade": 5,
+    "Reading_Level_Percentage": 77.3,
+    "Math_Level_Percentage": 43.8
+  },
+  {
+    "Year": 2018,
+    "State": "Kerala",
+    "Grade": 8,
+    "Reading_Level_Percentage": 83.6,
+    "Math_Level_Percentage": 51.8
+  },
+  {
+    "Year": 2022,
+    "State": "Kerala",
+    "Grade": 3,
+    "Reading_Level_Percentage": 38.8,
+    "Math_Level_Percentage": 38.9
+  },
+  {
+    "Year": 2022,
+    "State": "Kerala",
+    "Grade": 5,
+    "Reading_Level_Percentage": 64.7,
+    "Math_Level_Percentage": 26.8
+  },
+  {
+    "Year": 2022,
+    "State": "Kerala",
+    "Grade": 8,
+    "Reading_Level_Percentage": 83.7,
+    "Math_Level_Percentage": 44.3
+  },
+  {
+    "Year": 2016,
+    "State": "Maharashtra",
+    "Grade": 3,
+    "Reading_Level_Percentage": 40.7,
+    "Math_Level_Percentage": 59.7
+  },
+  {
+    "Year": 2016,
+    "State": "Maharashtra",
+    "Grade": 5,
+    "Reading_Level_Percentage": 62.5,
+    "Math_Level_Percentage": 20.3
+  },
+  {
+    "Year": 2016,
+    "State": "Maharashtra",
+    "Grade": 8,
+    "Reading_Level_Percentage": 75.8,
+    "Math_Level_Percentage": 31.5
+  },
+  {
+    "Year": 2022,
+    "State": "Maharashtra",
+    "Grade": 3,
+    "Reading_Level_Percentage": 26.6,
+    "Math_Level_Percentage": 16.7
+  },
+  {
+    "Year": 2022,
+    "State": "Maharashtra",
+    "Grade": 5,
+    "Reading_Level_Percentage": 55.5,
+    "Math_Level_Percentage": 13.6
+  },
+  {
+    "Year": 2022,
+    "State": "Maharashtra",
+    "Grade": 8,
+    "Reading_Level_Percentage": 76.2,
+    "Math_Level_Percentage": 34.6
+  }
+]
