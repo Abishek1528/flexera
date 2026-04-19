@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import SchoolDetails from '../components/SchoolDetails.jsx';
 import api from '../services/api.js';
-import '../Styles/SchoolDetail.css';
+import '../Styles/Schooldetail.css';
 
 /* ── Skeleton ── */
 const DetailSkeleton = () => (
